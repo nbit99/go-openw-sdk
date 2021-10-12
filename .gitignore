@@ -1,0 +1,8 @@
+release
+.idea/
+go.sum
+*.db
+*.ini
+*.key
+build
+*.txt
