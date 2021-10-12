@@ -4,8 +4,8 @@ import (
 	"flag"
 	"github.com/astaxie/beego/config"
 	"github.com/nbit99/go-openw-sdk/v2/openwsdk"
-	"github.com/blocktree/openwallet/v2/log"
-	"github.com/blocktree/openwallet/v2/owtp"
+	"github.com/nbit99/openwallet/v2/log"
+	"github.com/nbit99/openwallet/v2/owtp"
 	"github.com/google/uuid"
 	"strings"
 )

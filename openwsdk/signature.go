@@ -4,7 +4,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"github.com/nbit99/go-owcrypt"
-	"github.com/blocktree/openwallet/v2/hdkeystore"
+	"github.com/nbit99/openwallet/v2/hdkeystore"
 )
 
 //SignRawTransaction 签名交易单

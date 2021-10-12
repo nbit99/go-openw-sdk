@@ -1,8 +1,8 @@
 package openwsdk
 
 import (
-	"github.com/blocktree/openwallet/v2/log"
-	"github.com/blocktree/openwallet/v2/owtp"
+	"github.com/nbit99/openwallet/v2/log"
+	"github.com/nbit99/openwallet/v2/owtp"
 	"testing"
 )
 

@@ -5,7 +5,7 @@ go 1.12
 require (
 	github.com/astaxie/beego v1.12.0
 	github.com/nbit99/go-owcrypt v1.0.3
-	github.com/blocktree/openwallet/v2 v2.0.4
+	github.com/nbit99/openwallet/v2 v2.0.4
 	github.com/google/uuid v1.1.1
 	github.com/tidwall/gjson v1.3.5
 )

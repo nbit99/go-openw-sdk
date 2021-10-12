@@ -3,9 +3,9 @@ package openwsdk
 import (
 	"encoding/json"
 	"github.com/nbit99/go-owcrypt"
-	"github.com/blocktree/openwallet/v2/common/file"
-	"github.com/blocktree/openwallet/v2/hdkeystore"
-	"github.com/blocktree/openwallet/v2/log"
+	"github.com/nbit99/openwallet/v2/common/file"
+	"github.com/nbit99/openwallet/v2/hdkeystore"
+	"github.com/nbit99/openwallet/v2/log"
 	"path/filepath"
 	"testing"
 )
