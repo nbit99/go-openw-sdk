@@ -10,5 +10,6 @@ require (
 	github.com/tidwall/gjson v1.3.5
 )
 
+
 //replace github.com/blocktree/go-owcdrivers => ../go-owcdrivers
 //replace github.com/blocktree/openwallet => ../openwallet
