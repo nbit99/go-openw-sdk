@@ -360,6 +360,36 @@ type SummaryTaskLog struct {
 	CreateTime     int64    `json:"createTime" storm:"index"` //汇总时间
 }
 
+func (wallet *Wallet) CreateAccountWithIndex(alias string, symbol *Symbol, key *hdkeystore.HDKey, accountIndex int64) (*Account, error) {
+
+	var (
+		account = &Account{}
+	)
+
+	account.Alias = alias
+	account.Symbol = symbol.Coin
+	account.ReqSigs = 1
+
+	newAccIndex := accountIndex
+
+	// root/n' , 使用强化方案
+	account.HdPath = fmt.Sprintf("%s/%d'", wallet.RootPath, newAccIndex)
+
+	childKey, err := key.DerivedKeyWithPath(account.HdPath, uint32(symbol.Curve))
+	if err != nil {
+		return nil, err
+	}
+
+	account.PublicKey = childKey.GetPublicKey().OWEncode()
+	account.AccountIndex = newAccIndex
+	account.AccountID = alias + ":" + openwallet.GenAccountID(account.PublicKey)
+	account.AddressIndex = -1
+	account.WalletID = wallet.WalletID
+
+	return account, nil
+
+}
+
 func (wallet *Wallet) CreateAccount(alias string, symbol *Symbol, key *hdkeystore.HDKey) (*Account, error) {
 
 	var (
