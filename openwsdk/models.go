@@ -213,6 +213,7 @@ type RawTransaction struct {
 	Required   uint64                     `json:"reqSigs"`   //必要签名
 	Fees       string                     `json:"fees"`      //手续费
 	ErrorMsg   *ErrorMsg                  `json:"errorMsg"`
+	ExtParam   string		      `json:"extParam"`
 }
 
 type ErrorMsg struct {
