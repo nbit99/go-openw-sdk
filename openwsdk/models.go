@@ -148,6 +148,7 @@ type Account struct {
 	AddressIndex     int64    `json:"addressIndex" bson:"addressIndex"`
 	Applytime        int64    `json:"applytime" bson:"applytime"`
 	Dealstate        int64    `json:"dealstate" bson:"dealstate"`
+	ReuseIndex       int64    `json:"reuseIndex" bson:"reuseIndex"`
 }
 
 type Address struct {
