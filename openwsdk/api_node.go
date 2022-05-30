@@ -318,6 +318,7 @@ func (api *APINode) CreateNormalAccount(
 		"hdPath":       accountParam.HdPath,
 		"reqSigs":      accountParam.ReqSigs,
 		"isTrust":      0,
+		"reuseIndex":   accountParam.ReuseIndex,
 	}
 
 	return api.node.Call(HostNodeID, "createAccount", params, sync, func(resp owtp.Response) {
